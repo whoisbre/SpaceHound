@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{73E20440-F315-80CF-1429-81F08545FBFB}</ProjectGuid>
+    <ProjectGuid>{65F2DE1C-320D-14BE-6A52-0E523B72B041}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,15 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerIdleMove.cs" />
+     <Compile Include="Assets\Scripts\CollisionDetection.cs" />
+     <Compile Include="Assets\Scripts\PlanetMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerMovementHorizontal.cs" />
      <Compile Include="Assets\Scripts\PlayerMovementVertical.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\StopCollisionMovement.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>F:/Unity Projekte/SpaceHound/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>F:/Unity Projekte/SpaceHoundBuildL/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>F:/Unity Projekte/SpaceHound/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>F:/Unity Projekte/SpaceHoundBuildL/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
