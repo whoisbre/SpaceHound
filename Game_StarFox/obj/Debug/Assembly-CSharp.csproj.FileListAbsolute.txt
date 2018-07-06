@@ -332,3 +332,7 @@ C:\SpaceHound\Game_StarFox\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
 C:\SpaceHound\Game_StarFox\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\SpaceHound\Game_StarFox\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 C:\SpaceHound\Game_StarFox\obj\Debug\Assembly-CSharp.csproj.CopyComplete
+C:\Users\bre\Desktop\SpaceHound-master\Game_StarFox\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\bre\Desktop\SpaceHound-master\Game_StarFox\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\bre\Desktop\SpaceHound-master\Game_StarFox\obj\Debug\Assembly-CSharp.dll
+C:\Users\bre\Desktop\SpaceHound-master\Game_StarFox\obj\Debug\Assembly-CSharp.pdb

@@ -1,14 +1,13 @@
-﻿/*  shoot bullets if spacebar is pressed
+﻿/*  shoot bullets if spacebar, num 0 or right enter is pressed
  * 
  * Author: Fabian Kessler
  */
 
- /*
-  * andere key auf strg oder 0
+ /*using System.Collections;
+using System.Collections.Generic;
+  * 
   */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class shoot : MonoBehaviour {
@@ -27,6 +26,9 @@ public class shoot : MonoBehaviour {
 
     float fireRate = 255f;
     float nextTimeToFire = 0f;
+    float letzterPlatzfuerSchiessen = 90f;
+
+  //  public Camera CameraHelper;   
 
     void Update () {
 
@@ -52,8 +54,28 @@ public class shoot : MonoBehaviour {
             TempRigidBody.AddForce(transform.forward * BulletSpeed * 11); // war 222
 
             Destroy(TempBulletHandler, 2.0f);
+
+
+            RaycastHit getroffenesObj;
+            // CameraHelper = Camera.main;
+
+            if (Physics.Raycast(BulletEmitter.transform.position,
+                    BulletEmitter.transform.forward, out getroffenesObj,
+                    letzterPlatzfuerSchiessen)) {
+
+
+                //planet1.NimmSchaden(0.1f);
+               // Planet.NimmSchaden(0.1f);
+                Debug.Log(getroffenesObj.transform.name);
+                // Target 
+                //getroffenesObj = getroffenesObj.transform.GetComponent<Target>();
+
+            }
+
         }
+        
     }
+    void schiesse(){ }
 }
                 // maybe
                 // TempBulletHandler.transform.Rotate(Vector3.left * 90);
@@ -67,6 +89,7 @@ public class shoot : MonoBehaviour {
         Debug.Log(shootcnt);
 */
 /*  Changelog:
+ *      26 Jun  Raycasting, added crosshair
  *      24 Jun  added multiple keys,
  *              you can shoot holding down space,
  *              fixed position in y axis
