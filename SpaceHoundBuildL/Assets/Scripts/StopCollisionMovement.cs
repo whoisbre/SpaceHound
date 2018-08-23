@@ -22,3 +22,5 @@ public class StopCollisionMovement : MonoBehaviour
         rigidbodyCube.velocity = Vector3.zero;
     }
 }
+
+// Author: Lukas Heitkamp

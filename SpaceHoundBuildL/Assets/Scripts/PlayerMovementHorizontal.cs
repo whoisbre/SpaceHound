@@ -4,7 +4,7 @@ public class PlayerMovementHorizontal : MonoBehaviour
 {
     private Vector3 right = new Vector3(0.2f, 0, 0);
     private GameObject player;
-    private float speed = 6.0f;
+    private float speed = 10.0f;
     private float axisState;
 
     // Use this for initialization
@@ -43,3 +43,5 @@ public class PlayerMovementHorizontal : MonoBehaviour
 
 
 }
+
+// Author: Lukas Heitkamp

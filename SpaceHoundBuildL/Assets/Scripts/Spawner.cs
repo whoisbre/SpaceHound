@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
 
-    private float timer = 2f;
+    private float timer = 3f;
     private GameObject planet;
 
 	// Use this for initialization
@@ -25,14 +25,16 @@ public class Spawner : MonoBehaviour
 
         if (timer <= 0f)
 	    {
-	        Instantiate(planet, new Vector3(Random.Range(-9f, 9), 11, Random.Range(10, 30)),
+	        Instantiate(planet, new Vector3(Random.Range(-9f, 9), 15, Random.Range(20, 50)),
 	            Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
             
-	        timer = 2f;
-	    }
+	        timer = 3f;
 
+	    }
 
 	}
 
 
 }
+
+// Author: Lukas Heitkamp

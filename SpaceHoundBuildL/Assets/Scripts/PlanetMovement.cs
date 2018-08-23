@@ -10,8 +10,16 @@ public class PlanetMovement : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	    planetrig = GetComponent<Rigidbody>();
-	    planetrig.AddForce(new Vector3(0, -10, -10), ForceMode.VelocityChange);
+	    
+	}
+
+    void Awake()
+    {
+        planetrig = GetComponent<Rigidbody>();
+        planetrig.AddForce(new Vector3(0, Random.Range(-8, 4), -10), ForceMode.VelocityChange);
+        Destroy(GameObject.Find("Explosion(Clone)"));
     }
 	
 }
+
+// Author: Lukas Heitkamp
