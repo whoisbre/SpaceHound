@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\shoot.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/SpaceHound/Game_StarFox/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
