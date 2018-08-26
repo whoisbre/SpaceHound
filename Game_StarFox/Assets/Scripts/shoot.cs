@@ -37,6 +37,13 @@ public class shoot : MonoBehaviour {
             Input.GetKey("[0]") && Time.time >= nextTimeToFire || 
             Input.GetKey("enter") && Time.time >= nextTimeToFire) {
 
+                schiesse();
+
+        }
+    }
+
+    void schiesse() {
+
             // short interval till next shot
             nextTimeToFire = Time.time + (1f / fireRate);
 
@@ -71,11 +78,7 @@ public class shoot : MonoBehaviour {
                 //getroffenesObj = getroffenesObj.transform.GetComponent<Target>();
 
             }
-
-        }
-        
     }
-    void schiesse(){ }
 }
                 // maybe
                 // TempBulletHandler.transform.Rotate(Vector3.left * 90);
