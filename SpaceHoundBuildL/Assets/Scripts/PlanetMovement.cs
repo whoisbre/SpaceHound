@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlanetMovement : MonoBehaviour
 {
-
     private Rigidbody planetrig;
 
 	// Use this for initialization
@@ -19,6 +18,8 @@ public class PlanetMovement : MonoBehaviour
         planetrig.AddForce(new Vector3(0, Random.Range(-8, 4), -10), ForceMode.VelocityChange);
         Destroy(GameObject.Find("Explosion(Clone)"));
     }
+
+
 	
 }
 
