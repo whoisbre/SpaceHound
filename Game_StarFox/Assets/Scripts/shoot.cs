@@ -24,9 +24,10 @@ public class shoot : MonoBehaviour {
 		 
 	}
 
-    float fireRate = 255f;
+    public float fireRate = 1f;
     float nextTimeToFire = 0f;
     float letzterPlatzfuerSchiessen = 90f;
+    float Schaden = 1f;
 
   //  public Camera CameraHelper;   
 
@@ -69,13 +70,13 @@ public class shoot : MonoBehaviour {
             if (Physics.Raycast(BulletEmitter.transform.position,
                     BulletEmitter.transform.forward, out getroffenesObj,
                     letzterPlatzfuerSchiessen)) {
-
-
-                //planet1.NimmSchaden(0.1f);
-               // Planet.NimmSchaden(0.1f);
+ 
                 Debug.Log(getroffenesObj.transform.name);
-                // Target 
-                //getroffenesObj = getroffenesObj.transform.GetComponent<Target>();
+ 
+            Planet Placeholder = getroffenesObj.transform.GetComponent<Planet>();
+            
+            // richtig?
+            if (Placeholder != null) { Placeholder.nimmSchaden(Schaden); }
 
             }
     }
