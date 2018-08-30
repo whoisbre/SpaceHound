@@ -47,6 +47,11 @@ public class GenerateEarth : MonoBehaviour {
 	    createtriangles();
 	    mesh.vertices = vertices.ToArray();
 	    mesh.triangles = triangles.ToArray();
+        mesh.RecalculateBounds();
+        mesh.RecalculateNormals();
+        mesh.RecalculateTangents();
+
+        
 
 
 
@@ -57,9 +62,11 @@ public class GenerateEarth : MonoBehaviour {
 
     void Update()
     {
-        meshR.transform.RotateAround(new Vector3(0, -1000, 0), new Vector3(1, 0, 0), -.36f*Time.deltaTime);
+        turtle.transform.RotateAround(meshR.bounds.center, new Vector3(1, 0, 0), -.36f);
     }
-	
+
+
+
 
 
     void createverts()

@@ -71,8 +71,8 @@ public class shoot : MonoBehaviour {
                 //planet1.NimmSchaden(0.1f);
                // Planet.NimmSchaden(0.1f);
                 Debug.Log(getroffenesObj.transform.name);
-                Destroy(getroffenesObj.transform.gameObject);
                 Instantiate(Explosion, getroffenesObj.transform);
+                Destroy(getroffenesObj.transform.gameObject);
 
                 // Target 
                 //getroffenesObj = getroffenesObj.transform.GetComponent<Target>();
