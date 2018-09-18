@@ -2,12 +2,7 @@
  * 
  * Author: Fabian Kessler
  */
-
- /*using System.Collections;
-using System.Collections.Generic;
-  * 
-  */
-
+ 
 using UnityEngine;
 
 public class shoot : MonoBehaviour {
@@ -28,7 +23,7 @@ public class shoot : MonoBehaviour {
 	    GameObject.Find("Explosion");
 	}
 
-    float fireRate = 255f;
+    float fireRate = 5f;
     float nextTimeToFire = 0f;
     float letzterPlatzfuerSchiessen = 90f;
 
@@ -43,6 +38,9 @@ public class shoot : MonoBehaviour {
 
             // short interval till next shot
             nextTimeToFire = Time.time + (1f / fireRate);
+            // Time.time + (1f / fireRate);
+
+             Bullet = GameObject.Find("projektil");
 
             // create bullet
             GameObject TempBulletHandler;
@@ -68,8 +66,7 @@ public class shoot : MonoBehaviour {
                     letzterPlatzfuerSchiessen)) {
 
 
-                //planet1.NimmSchaden(0.1f);
-               // Planet.NimmSchaden(0.1f);
+             // PROBLEME MIT GESCHWINDIGKEIT
                 Debug.Log(getroffenesObj.transform.name);
                 Instantiate(Explosion, getroffenesObj.transform);
                 Destroy(getroffenesObj.transform.gameObject);
