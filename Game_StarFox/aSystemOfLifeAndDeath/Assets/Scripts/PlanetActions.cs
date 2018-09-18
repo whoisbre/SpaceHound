@@ -12,6 +12,7 @@
   * 
   * bullet kann planeten abschießen
   * planet destroyed wenn er collidiert
+  * bullet stirbt on impact
   */
 
 using UnityEngine;
