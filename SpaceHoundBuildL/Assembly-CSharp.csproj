@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackgroundMovement.cs" />
+    <Compile Include="Assets\Scripts\BlinkingLight.cs" />
     <Compile Include="Assets\Scripts\Bullet_behav.cs" />
     <Compile Include="Assets\Scripts\CollisionDetection.cs" />
     <Compile Include="Assets\Scripts\GenerateEarth.cs" />
