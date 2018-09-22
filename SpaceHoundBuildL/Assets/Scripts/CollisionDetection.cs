@@ -17,8 +17,8 @@ public class CollisionDetection : MonoBehaviour
     }
 
 
-    
 
+    int PlanetHealth = 3;
 
     void OnCollisionEnter(Collision col)
     {
@@ -32,7 +32,14 @@ public class CollisionDetection : MonoBehaviour
 
         }
 
+        // Manage Life
+        PlanetHealth--;
 
+        if (PlanetHealth == 0) {
+            // Game Over
+        }
+
+        //Debug.Log(PlanetHealth);
             
         
     }
