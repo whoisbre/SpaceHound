@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/SpaceHound2/GameBuild_v1/SpaceHound.exe
+C:/SpaceHound2/GameBuild_v2/SpaceHound.exe
 SceneListBegin?
 Assets/Scenes/Game.unity
 SceneListEnd?
@@ -219,6 +219,7 @@ de285b37582bd26663258776dc87aa54 Assembly-CSharp.dll:UnityStandardAssets.SceneUt
 63ddd541b0be4692130653e47c9df4c5 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.SpecularLighting
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.PlayerIdleMove
 6cb8e166eb7b5eba6567fb6b107b6d77 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.WaypointCircuit
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Player_CollisionDet
 d33ca682ebf67c138052c44a5b20c529 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Cameras.TargetFieldOfView
 835999720c64ca72971bdcd599094aa9 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow

@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\PlanetMovement.cs" />
     <Compile Include="Assets\Scripts\PlanetRotation.cs" />
     <Compile Include="Assets\Scripts\Player_behav.cs" />
+    <Compile Include="Assets\Scripts\Player_CollisionDet.cs" />
     <Compile Include="Assets\Scripts\PlayerIdleMove.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementHorizontal.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementVertical.cs" />
