@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/SpaceHound2/final_build/SpaceHound.exe
+D:/Dokumente/Uni/GDV/spacehoundtestbuild/SpaceHound.exe
 SceneListBegin?
 Assets/Scenes/Game.unity
 SceneListEnd?
