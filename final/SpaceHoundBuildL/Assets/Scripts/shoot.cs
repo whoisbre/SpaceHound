@@ -23,7 +23,7 @@ public class shoot : MonoBehaviour {
 	    GameObject.Find("Explosion");
 	}
 
-    float fireRate = 5f;
+    float fireRate = 11f;
     float nextTimeToFire = 0f;
     float letzterPlatzfuerSchiessen = 90f;
 
