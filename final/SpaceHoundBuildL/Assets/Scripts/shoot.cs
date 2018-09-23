@@ -19,9 +19,9 @@ public class shoot : MonoBehaviour {
     
 	void Start ()
 	{
-        Explosion = new GameObject();
-	    GameObject.Find("Explosion");
-	}
+        Explosion = GameObject.Find("Explosion");
+
+    }
 
     float fireRate = 11f;
     float nextTimeToFire = 0f;
