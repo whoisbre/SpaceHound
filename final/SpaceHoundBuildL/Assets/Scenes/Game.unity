@@ -10262,7 +10262,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fed7430f214f8eb43bae1c2e7728713f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10348,7 +10348,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fed7430f214f8eb43bae1c2e7728713f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11065,9 +11065,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1253212574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42ca9d7ad68388048bc10666c0bb26f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fbb69cd35249f047bbd0ca2d69960ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LightON: {fileID: 2100000, guid: fed7430f214f8eb43bae1c2e7728713f, type: 2}
+  LightOFF: {fileID: 2100000, guid: bc3951822cd9e4d469e1070e0627d469, type: 2}
+  offsetTime: 1
+  LightObjects: []
 --- !u!4 &1253212576
 Transform:
   m_ObjectHideFlags: 0
